@@ -1,0 +1,85 @@
+.table {
+    position: relative;
+    width: 1111px;
+    height: 450px;
+    left: 209px;
+}
+
+.titulos {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 32px;
+    color: #484A46;
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+
+.subtitulos {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.7);
+    right: 50px;
+}
+
+
+.dropdowns {
+    text-align: center;
+}
+
+.barra {
+    width: 504px;
+    display: flex;
+    flex-direction: column;
+    padding: 1%;
+    height: 50px;
+}
+
+.dropdown-wrapper {
+    display: inline-block;
+    margin-right: 10px;
+    vertical-align: top;
+}
+
+.dropdown-title {
+    margin-bottom: 5px;
+}
+
+#btn-requisitar {
+    color: #fff;
+    float: left;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.widgets {
+    width: 200px;
+    height: 193px;
+    left: 314px;
+    top: 1516px;
+}
+
+#coletes {
+    margin-left: 300px;
+    margin-bottom: 10%;
+}
+
+#mota-agua {
+    margin-left: 30px;
+    margin-bottom: 10%;
+}
+
+#flyboard {
+    margin-left: 30px;
+    margin-bottom: 10%;
+}
+
+#barcos {
+    margin-left: 30px;
+    margin-bottom: 10%;
+}

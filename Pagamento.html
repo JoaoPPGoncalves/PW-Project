@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- SEO Meta Tags -->
+    <meta name="description"
+        content="Aria is a business focused HTML landing page template built with Bootstrap to help you create lead generation websites for companies and their services.">
+    <meta name="author" content="Inovatik">
+
+    <!-- OG Meta Tags to improve the way the post looks when you share the page on LinkedIn, Facebook, Google+ -->
+    <meta property="og:site_name" content="" /> <!-- website name -->
+    <meta property="og:site" content="" /> <!-- website link -->
+    <meta property="og:title" content="" /> <!-- title shown in the actual shared post -->
+    <meta property="og:description" content="" /> <!-- description shown in the actual shared post -->
+    <meta property="og:image" content="" /> <!-- image link, make sure it's jpg -->
+    <meta property="og:url" content="" /> <!-- where do you want your post to link to -->
+    <meta property="og:type" content="article" />
+
+    <!-- Website Title -->
+    <title>Activities For All</title>
+
+    <!-- Styles -->
+    <link href="css/login.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:500,700&display=swap&subset=latin-ext"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600&display=swap&subset=latin-ext"
+        rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/fontawesome-all.css" rel="stylesheet">
+    <link href="css/swiper.css" rel="stylesheet">
+    <link href="css/magnific-popup.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="css/geral.css" rel="stylesheet">
+    <link href="css/Pagamento.css" rel="stylesheet">
+    <script src="js/adicionarPagamento.js"></script>
+
+
+
+    <!-- Favicon  -->
+    <link rel="icon" href="images/favicon.png">
+
+
+
+</head>
+
+<body data-spy="scroll" data-target=".fixed-top">
+
+    <!-- Preloader -->
+    <div class="spinner-wrapper">
+        <div class="spinner">
+            <div class="bounce1"></div>
+            <div class="bounce2"></div>
+            <div class="bounce3"></div>
+        </div>
+    </div>
+    <!-- end of preloader -->
+
+    <!-- Login Modal-->
+    <div>
+        <div class="hide d-flex flex-column align-items-center" id="fade">
+            <div id="modal" class="hide">
+                <div class="modal-body">
+                    <input type="checkbox" id="chk" aria-hidden="true">
+
+                    <p id="close-modal" class="d-flex justify-content-end">X</p>
+                    <div class="signup">
+                        <form class="signupForm" action=""><!--  onsubmit="bd/registoConta(); return false;" -->
+                            <div class="signupFormHeader d-flex flex-column justify-content-center align-items-center">
+                                <label for="chk" aria-hidden="true">Sign up</label>
+                                <div id="signUpGoogle"></div>
+
+                            </div>
+                            <input type="text" name="txt" placeholder="Nome" required="true" class="inputSignUp">
+                            <input type="email" name="email" placeholder="Email" required="true" class="inputSignUp">
+                            <input type="password" name="pswd" placeholder="Password" required="true"
+                                class="inputSignUp">
+                            <input type="password" name="rptpswd" placeholder="Repetir password" required="true"
+                                class="inputSignUp">
+                            <select name="genero" class="inputSignUp">
+                                <option value="masculino">Masculino</option>
+                                <option value="feminino">Feminino</option>
+                            </select>
+                            <button class="formButton formButtonSignUp" type="submit">Sign up</button>
+                        </form>
+                    </div>
+
+                    <div class="login">
+                        <form>
+                            <label for="chk" aria-hidden="true">Login</label>
+                            <div id="loginGoogle" class="d-flex flex-column align-items-center"></div>
+
+                            <input class="loginInput" type="email" name="email" placeholder="Email" required="true">
+                            <input class="loginInput" type="password" name="pswd" placeholder="Password"
+                                required="true">
+                            <button class="formButton formButtonLogin">Login</button>
+                        </form>
+                        <div class="maisInfo d-flex flex-column justify-content-center align-items-center p-3">
+                            <a href="#" class="esquecimePassword">Esqueci-me da password!</a>
+                            <!--  <label for="chk" aria-hidden="true">Criar Conta!</label> -->
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End of login modal\ -->
+
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md navbar-dark navbar-custom fixed-top">
+        <!-- Text Logo - Use this if you don't have a graphic logo -->
+        <!-- <a class="navbar-brand logo-text page-scroll" href="index.html">Aria</a> -->
+
+        <!-- Image Logo -->
+        <a class="navbar-brand logo-image" href="index.html"><img src="images/LogoSemFundo.png" alt="alternative"></a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+            aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-awesome fas fa-bars"></span>
+            <span class="navbar-toggler-awesome fas fa-times"></span>
+        </button> -->
+        <!-- end of mobile menu toggle button -->
+
+        <div id="colocarNavBarItems"></div>
+
+    </nav> <!-- end of navbar -->
+    <!-- end of navbar -->
+
+
+
+    <div class="main">
+
+
+
+        <style>
+            .div1 {
+                position: relative;
+                z-index: 1;
+            }
+
+            .div2 {
+                position: relative;
+                z-index: 2;
+            }
+
+            .div3 {
+                position: relative;
+                z-index: 3;
+            }
+
+            .div4 {
+                position: relative;
+                z-index: 4;
+            }
+
+            .div5 {
+                position: relative;
+                z-index: 5;
+            }
+
+            .div6 {
+                position: relative;
+                z-index: 6;
+            }
+        </style>
+
+        <div class="div1">
+            <h1 class="d-flex justify-content-center" style="margin-top: 2%;"> Detalhes da sua Reserva </h1>
+            <!-- conteúdo da div1 aqui -->
+            <!-- "tabela" com os valores da compra -->
+
+            <div style="height: 360px; width: 620px; margin-top: 6%; margin-left: 22%;">
+
+                <div class="d-flex ">
+                    <strong style="font-size: 20px;"> Nome: </strong>
+                    <p style="padding-left: 3%;" id="nome"></p>
+                </div>
+
+                <div class="d-flex ">
+
+                    <strong style="font-size: 20px;"> Atividade:</strong>
+                    <p style="padding-left: 3%;" id="atividade"></p>
+                </div>
+
+                <div class="d-flex ">
+
+                    <strong style="font-size: 20px;"> Data da Reserva:</strong>
+                    <p style="padding-left: 3%;" id="dataReserva"></p>
+                </div>
+
+                <div class="d-flex ">
+
+                    <strong style="font-size: 20px;"> Hora da Reserva:</strong>
+                    <p style="padding-left: 3%;" id="horaReserva"></p>
+                </div>
+
+
+                <div class="d-flex ">
+
+                    <strong style="font-size: 20px;"> Quantidade:</strong>
+                    <p style="padding-left: 3%;" id="quantidade"></p>
+                </div>
+
+
+                <div>
+
+                    <div class="d-flex">
+
+                        <strong style="font-size: 20px;"> Valor:</strong>
+                        <p style="padding-left: 3%;" id="valor"></p>
+                    </div>
+
+
+                    <div class="d-flex">
+
+                        <strong style="font-size: 20px;"> Apenas tem esta sessão par acompletar o pagamento.</strong>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="div2">
+        <h1 class="d-flex justify-content-center" style="margin-top: 2%;">Escolher Meio pagamento</h1>
+        <div class="container">
+            <button class="quadrado" id="mbway-button" onclick="mostrarDiv('mbway-div'); esconderDiv2();">
+                <img src="https://pymts.uminho.pt/Images/mb-way.svg" alt="MBWay" style="max-height: 100px;">
+            </button>
+            <button class="quadrado" id="mb-button" onclick="mostrarDiv('mb-div'); esconderDiv2();">
+                <img src="https://pymts.uminho.pt/Images/mb.svg" alt="MB" style="max-height: 100px;">
+            </button>
+            <button class="quadrado" id="cc-button" onclick="mostrarDiv('cc-div'); esconderDiv2();">
+                <img src="https://pymts.uminho.pt/Images/cc.svg" alt="CC" style="max-height: 100px;">
+            </button>
+        </div>
+    </div>
+
+    <div class="div3" id="mbway-div">
+        <h1 class="d-flex justify-content-center" style="margin-top: 5%;">Pagar com MB WAY</h1>
+        <div style="height: 360px; width: 600px; margin-top: 6%; margin-left: 34%;">
+
+            <!-- conteúdo da div3 aqui -->
+
+            <div class="col-md-12 mt-2">
+                <div class="row">
+                    <div class="col-md-3 mb-3 mt-1">
+                        <img src="https://pymts.uminho.pt/Images/mb-way.svg" alt="MBWay" style="max-height: 60px;" />
+                    </div>
+                    <div class="col-md-9">
+                        <div class="form-group">
+
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text">
+                                        <i class="fa fa-mobile-alt mr-1"></i>
+                                        +351
+                                    </div>
+                                </div>
+                                <!-- <input name="telemovel" type="tel" id="telemovel" class="form-control"
+                                    aria-describedby="mbWayHelp" placeholder="telemóvel" title="Telemóvel (9 dígitos)"
+                                    pattern="[0-9]{9}" />
+                                <div class="invalid-feedback">
+                                    Por favor coloque um número válido!
+                                </div> -->
+                                <input name="telemovel" type="tel" id="telemovel" class="form-control"
+                                    aria-describedby="mbWayHelp" placeholder="telemóvel" title="Telemóvel (9 dígitos)"
+                                    pattern="[0-9]{9}" required>
+                                <div class="invalid-feedback">
+                                    Por favor, insira um número válido de nove dígitos.
+                                </div>
+                            </div>
+                            <small id="mbWayHelp" class="form-text text-muted">Será enviada uma notificação o para o seu
+                                telemóvel. Aceite a transação com o seu PIN MB WAY dentro do tempo limite
+                                indicado (5 minutos).</small>
+                            <div class="input-group mt-1 text-right">
+
+                                <button type="button" name="btnPagaMBWay" id="btnPagaMBWay"
+                                    class="btn btn-primary mr-2 mt-2" onclick="realizarPedido()">Pagar</button>
+                                <button type="button" id="btnCancelaMBWay"
+                                    class="btn btn-secondary cancelar-pagamento mt-2">Cancelar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    </div>
+
+
+
+
+    <div class="div4" id="mb-div">
+        <h1 class="d-flex justify-content-center" style="margin-top: 5%;">Pagar com Referência Bancária</h1>
+        <div style="height: 300px; width: 600px; margin-top: 2%; margin-left: 34%;" id="divReferencia">
+
+            <!-- conteúdo da div4 aqui -->
+            <div class="d-flex flex-row" id="111">
+
+                <div class="col-md-2 mb-3" style="margin-right: 20%;">
+                    <img src="https://pymts.uminho.pt/Images/mb.svg" alt="MB" style="max-height: 60px;" />
+                </div>
+                <div class="col-md-10">
+                    <div class="form-group">
+                        <small id="mbHelp" class="form-text text-muted">As referências Multibanco geradas por este
+                            meio têm validade limitada. Gere a referência apenas quando pretender usar a mesma para
+                            pagamento.</small>
+                        <div class="input-group mt-1 text-right">
+
+                            <button type="button" id="btnGeraReferenciaMB" onclick="alterarAltura()"
+                                onclick="mostrarDiv()" class="btn btn-primary mr-2 mt-2">Gerar Referência</button>
+                            <button type="button" id="btnCancelarMB"
+                                class="btn btn-secondary cancelar-pagamento mt-2">Cancelar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- começa aqui a nova cena -->
+
+            <div class="col-md-9" id="112" style="display: none;">
+                <img id="imgEstadoPagamentoMeioPagamento" src="https://pymts.uminho.pt/Images/mb.svg"
+                    style="max-height: 60px;" />
+                <div id="divEstadoPagamentoLinha1" class="row">
+                    <div class="col-4">
+                        <br>
+                        <label for="lblEstadoPagamentoValor1" id="lblEstadoPagamentoTitulo1"
+                            class="font-weight-bold">Entidade:</label>
+                    </div>
+                    <div class="col-8">
+                        <br>
+                        <span id="lblEstadoPagamentoValor1">23917</span>
+                    </div>
+                </div>
+                <div id="divEstadoPagamentoLinha2" class="row">
+                    <div class="col-4">
+                        <br>
+
+                        <label for="lblEstadoPagamentoValor2" id="lblEstadoPagamentoTitulo2"
+                            class="font-weight-bold">Referência:</label>
+                    </div>
+                    <div class="col-8" id="referencia">
+
+                        <br>
+                        <span id="lblEstadoPagamentoValor2">### ### ###</span>
+                    </div>
+                </div>
+
+                <div id="divEstadoPagamentoLinha3" class="row">
+                    <div class="col-4">
+                        <br>
+                        <label for="lblEstadoPagamentoValor3" id="lblEstadoPagamentoTitulo3"
+                            class="font-weight-bold">Valor:</label>
+                    </div>
+                    <div class="col-8">
+                        <br>
+                        <span id="lblEstadoPagamentoValor3"></span>
+                    </div>
+                </div>
+                <div id="divEstadoPagamentoLinha4" class="row">
+                    <div class="col-4">
+                        <br>
+                        <label for="lblEstadoPagamentoValor4" id="lblEstadoPagamentoTitulo4"
+                            class="font-weight-bold">Validade (Ref.MB):</label>
+                    </div>
+                    <div class="col-8">
+                        <br>
+                        <span id="lblEstadoPagamentoValor4">Tem até 3 dias úteis.</span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-4">
+                        <br>
+                        <label for="lblEstadoPagamentoEstadoValor" id="lblEstadoPagamentoEstadoTitulo"
+                            class="font-weight-bold">Estado:</label>
+                    </div>
+                    <div class="col-8">
+                        <div class="row">
+                            <div class="col-md-4 col-sm-12">
+                                <br>
+                                <span id="lblEstadoPagamentoEstadoValor" class="badge badge-info"
+                                    style="font-size: 16px; margin-right: 10px;">Pendente</span>
+                            </div>
+                            <div class="col-md-8 col-sm-12">
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <span id="timerPagamento" style="visibility:hidden;display:none;"></span>
+
+                <div class="row mt-3">
+                    <div class="col-12 text-md-right">
+                        <br>
+
+                        <input type="button" id="btnConcluirGeraReferenciaMB" value="Concluir" onclick="mostrarDiv()" onclick="realizarPedido()"
+                            class="btn btn-primary mr-2 mt-2"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+
+
+
+    <div class="div5" id="cc-div">
+        <h1 class="d-flex justify-content-center" style="margin-top: 5%;">Pagar com Cartão Crédito</h1>
+        <div style="height: 360px; width: 600px; margin-top: 6%; margin-left: 31%;">
+            <input type="text" placeholder="Número do Cartão (16 Números!)" pattern="[0-9]{1,16}" maxlength="16" style="margin-bottom: 10px; width: 100%; padding: 5px;">
+            <input type="text" placeholder="Nome do Proprietário " pattern="[A-Za-z\s]+" style="margin-bottom: 10px; width: 100%; padding: 5px;">
+            <input type="date" placeholder="Data de Validade" style="margin-bottom: 10px; width: 100%; padding: 5px;">
+            <input type="text" placeholder="CVV (3 Números!)" pattern="[0-9]{1,3}" maxlength="3" style="margin-bottom: 10px; width: 100%; padding: 5px;">
+            <button class="btn btn-primary mr-2 mt-2" id="btnConcluirCC" style="width: 50%;" >Pagar com CC</button>
+            <button type="button" id="btnCancelarcc"
+                                class="btn btn-secondary cancelar-pagamento mt-2" style="width: 50%;">Cancelar</button>
+          </div>
+          
+    </div>
+
+
+
+    <div class="div6">
+        <h1 class="d-flex justify-content-center" style="margin-top: 5%;"> Detalhes da sua Reserva: <strong
+                style="margin-left: 9%;">Paga e Reservada!</strong> </h1>
+        <div style="margin-left: 61%; margin-top: 2%">
+
+            <button class="meuperfil" onclick="redirecionarPagina()">Ir para Meu Perfil</button>
+
+            <script>
+                function redirecionarPagina() {
+                    window.location.href = "perfilCliente.html";
+
+                }
+            </script>
+        </div>
+        <div style="height: 360px; width: 620px; margin-left: 26%;">
+
+            <div class="d-flex ">
+                    <strong style="font-size: 20px;"> Nome: </strong>
+                    <p style="padding-left: 3%;" id="nome1"></p>
+                </div>
+
+                <div class="d-flex ">
+
+                    <strong style="font-size: 20px;"> Atividade:</strong>
+                    <p style="padding-left: 3%;" id="atividade1"></p>
+                </div>
+
+                <div class="d-flex ">
+
+                    <strong style="font-size: 20px;"> Data da Reserva:</strong>
+                    <p style="padding-left: 3%;" id="dataReserva1"></p>
+                </div>
+
+                <div class="d-flex ">
+
+                    <strong style="font-size: 20px;"> Hora da Reserva:</strong>
+                    <p style="padding-left: 3%;" id="horaReserva1"></p>
+                </div>
+
+
+                <div class="d-flex ">
+
+                    <strong style="font-size: 20px;"> Quantidade:</strong>
+                    <p style="padding-left: 3%;" id="quantidade1"></p>
+                </div>
+
+
+                <div>
+
+                    <div class="d-flex">
+
+                        <strong style="font-size: 20px;"> Valor:</strong>
+                        <p style="padding-left: 3%;" id="valor1"></p>
+                    </div>
+
+                </div>
+        </div>
+    </div>
+
+
+    </div>
+
+
+
+
+    <!-- barra de pagar -->
+
+    <div class="mainWrapper" style="margin-left: 22%;">
+        <div class="statusBar">
+            <span class="pBar"></span>
+            <div class="node n0 done nConfirm0">
+                <div class="main done m0 done nConfirm0"></div>
+                <span class="text t0 done nConfirm0">Confirmar</span>
+            </div>
+            <div class="node n1 nConfirm1">
+                <div class="main m1 nConfirm1"></div>
+                <span class="text t1 nConfirm1">Metodo</span>
+            </div>
+            <div class="node n2 nConfirm2">
+                <div class="main m2 nConfirm2"></div>
+                <span class="text t2 nConfirm2">Pagar</span>
+            </div>
+            <div class="node n3 nConfirm3">
+                <div class="main m3 nConfirm3"></div>
+                <span class="text t3 nConfirm3">Completo</span>
+            </div>
+
+        </div>
+        <div class="buttonHolder">
+            <button class="button b-back disabled" id="back">Back</button>
+            <button class="button b-next" id="next">Next</button>
+        </div>
+    </div>
+    </div>
+
+
+
+
+    <!-- Footer -->
+    <br>
+    <br>
+    <br>
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="text-container contactos">
+                        <h4>Contactos</h4>
+                        <ul class="list-unstyled li-space-lg white">
+                            <div>
+                                <li>
+                                    <i class="fa fa-phone"></i>
+                                    <a class="white" href="#your-link">+351 939393939</a> (chamada para rede móvel
+                                    nacional).
+                                </li>
+                            </div>
+                            <div>
+                                <li>
+                                    <i class="fa fa-envelope"></i>
+                                    <a class="white" href="terms-conditions.html">
+                                        activitiesforall.algarve@gmail.com</a>
+                                </li>
+                            </div>
+                            <div>
+                                <li>
+                                    <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                    <a class="white" href="privacy-policy.html">Av. Tomás Cabreira, Portimão, Algarve,
+                                        8500-802, PT</a>
+                                </li>
+                            </div>
+                        </ul>
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+                <div class="col-md-6">
+                    <div class="text-container">
+                        <h4>Links rápidos</h4>
+                        <ul class="list-unstyled li-space-lg white">
+                            <li>
+                                <a class="white" href="#your-link">Inicio</a>
+                            </li>
+                            <li>
+                                <a class="white" href="index.html">Todas as Atividades </a>
+                            </li>
+                            <li>
+                                <a class="white" href="Frotas.html">Frota</a>
+                            </li>
+                            <li>
+                                <a class="white" href="FAQ.html">FAQ</a>
+                            </li>
+                            <li>
+                                <a class="white" href="PDP.html">Políticas de Privacidade</a>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <p class="white">Activities for All - Grupo 104 @2023</p>
+                            </li>
+                        </ul>
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+
+        </div> <!-- end of container -->
+
+
+
+    </div> <!-- end of footer -->
+    <!-- end of footer -->
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Scripts -->
+    <script src="js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
+    <script src="js/popper.min.js"></script> <!-- Popper tooltip library for Bootstrap -->
+    <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
+    <script src="js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
+    <script src="js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
+    <script src="js/jquery.magnific-popup.js"></script> <!-- Magnific Popup for lightboxes -->
+    <script src="js/morphext.min.js"></script> <!-- Morphtext rotating text in the header -->
+    <script src="js/isotope.pkgd.min.js"></script> <!-- Isotope for filter -->
+    <script src="js/validator.min.js"></script> <!-- Validator.js - Bootstrap plugin that validates forms -->
+    <script src="js/scripts.js"></script> <!-- Custom scripts -->
+    <script src="js/Pagamento.js"></script> <!-- Avançar no modo do pagamento -->
+
+
+    <!-- HOJE segunda ALTERAÇÕES -->
+
+    <script type="module" src="./bd/bd.js"></script> <!-- bd script -->
+    <script src="./js/navbar.js"></script> <!-- para fazer a navbar -->
+    <script type="module" src="./js/autenticacaoFrontEnd.js"></script> <!-- botão de login -->
+
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <script src="https://unpkg.com/jwt-decode/build/jwt-decode.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsSHA/2.0.2/sha.js"></script>
+
+    <script type="module" src="js/apis/google.js"></script><!-- Script login google-->
+
+    <!--   <script>
+        const nextButton = document.getElementById("next");
+        const backButton = document.getElementById("back");
+        const div1 = document.querySelector(".div1");
+        const div2 = document.querySelector(".div2");
+      
+        let currentPage = 1;
+      
+        nextButton.addEventListener("click", () => {
+          if (currentPage === 1) {
+            div1.style.display = "none";
+            div2.style.display = "block";
+            currentPage++;
+          }
+        });
+      
+        backButton.addEventListener("click", () => {
+          if (currentPage === 2) {
+            div2.style.display = "none";
+            div1.style.display = "block";
+            currentPage--;
+          }
+        });
+      </script> -->
+    <script>
+        function gerarReferencia() {
+            var referencia = "";
+            for (var i = 0; i < 3; i++) {
+                var bloco = Math.floor(Math.random() * 900) + 100;
+                referencia += bloco + " ";
+            }
+            return referencia.trim();
+        }
+
+        function exibirReferencia() {
+            document.getElementById("lblEstadoPagamentoValor2").innerHTML = gerarReferencia();
+        }
+    </script>
+
+
+    <!-- Esta script serve para ao clicar no botao gerar referencia ele alem de me mostrar o que 
+        gerou faz com que a div main seja maior para o gerado ficar lá dentro  -->
+    <script>
+        function alterarAltura() {
+            var divReferencia = document.getElementById("divReferencia");
+            var btnGeraReferenciaMB = document.getElementById("btnGeraReferenciaMB");
+
+            if (divReferencia.style.height === "300px") {
+                divReferencia.style.height = "600px";
+            } else {
+                divReferencia.style.height = "300px";
+            }
+            exibirReferencia()
+
+            btnGeraReferenciaMB.disabled = true;  // Desabilita o botão após o primeiro clique
+        }
+    </script>
+    <script>
+        const backButton = document.getElementById("back");
+        const nextButton = document.getElementById("next");
+        const div1 = document.querySelector(".div1");
+        const div2 = document.querySelector(".div2");
+        const div3 = document.querySelector(".div3");
+        const div4 = document.querySelector(".div4");
+        const div5 = document.querySelector(".div5");
+        const div6 = document.querySelector(".div6");
+        let currentDiv = 1; // começa com a primeira div
+
+
+        function updateDivVisibility() {
+            div1.style.display = currentDiv === 1 ? "block" : "none";
+            div2.style.display = currentDiv === 2 ? "block" : "none";
+            div3.style.display = currentDiv === 3 ? "block" : "none";
+            div4.style.display = currentDiv === 4 ? "block" : "none";
+            div5.style.display = currentDiv === 5 ? "block" : "none";
+            div6.style.display = currentDiv === 6 ? "block" : "none";
+            backButton.disabled = currentDiv === 1; // desabilita o botão "back" se estiver na primeira div
+            nextButton.disabled = currentDiv === 6; // desabilita o botão "next" se estiver na última div
+        }
+
+        updateDivVisibility(); // chama a função uma vez para inicializar a visibilidade das divs
+
+        /* função que paga com mbway,referencai ou cartao  e vai para os detalhes da reserva */
+        function mostrarDiv6() {
+            const div3 = document.querySelector('.div3,.div4,.div5');
+            const div6 = document.querySelector('.div6');
+            document.querySelectorAll('.div3,.div4,.div5,.div6').forEach(div => div.style.display = 'none');
+            div6.style.display = 'block';
+        }
+
+
+        /*  backButton.addEventListener("click", () => {
+             if (currentDiv > 1) {
+ 
+                 if (currentDiv == 6)
+                     currentDiv = 2;
+                 else
+                     currentDiv--;
+             }
+             updateDivVisibility();
+         });
+ 
+          nextButton.addEventListener("click", () => {
+             if (currentDiv < 2) {
+                 currentDiv++;
+             }
+             updateDivVisibility();
+         });   */
+
+
+
+        nextButton.addEventListener("click", () => {
+            if (currentDiv == 1) {
+                currentDiv++;
+                nextButton.style.display = "none";
+                //backButton.style.display = "none";
+
+
+            }
+            updateDivVisibility();
+        });
+
+        backButton.addEventListener("click", () => {
+            if (currentDiv == 3) {
+                currentDiv--;
+            } else if (currentDiv == 2) {
+                currentDiv--;
+                nextButton.style.display = "block";
+
+            } else if (currentDiv == 1) {
+                currentDiv--;
+            }
+            updateDivVisibility();
+        });
+
+
+
+        btnCancelaMBWay.addEventListener("click", () => {
+            if (currentDiv == 3) {
+                currentDiv--;
+            }
+            updateDivVisibility();
+            backButton.style.display = "block";
+        });
+
+
+        btnCancelarMB.addEventListener("click", () => {
+            if (currentDiv == 3) {
+                currentDiv--;
+            }
+            updateDivVisibility();
+            backButton.style.display = "block";
+        });
+
+        /* Aqui */
+        btnCancelarcc.addEventListener("click", () => {
+            if (currentDiv == 3) {
+                currentDiv--;
+            }
+            updateDivVisibility();
+            backButton.style.display = "block";
+        });
+
+
+
+    </script>
+
+    <script>
+        function mostrarDiv() {
+            const div3 = document.querySelector('.div3');
+            const div6 = document.querySelector('.div6');
+            document.querySelectorAll('.div3, .div6').forEach(div => div.style.display = 'none');
+            div6.style.display = 'block';
+        }
+
+    </script>
+
+
+
+    <script>
+        function mostrarDiv(divId) {
+            // esconde todas as divs
+            document.querySelectorAll('.div1, .div2, .div3, .div4, .div5')
+                .forEach(div => div.style.display = 'none', backButton.style.display = "none");
+            // mostra apenas a div com o id correspondente
+            document.getElementById(divId).style.display = 'block';
+        }
+
+        function esconderDiv2() {
+            // esconde a div2
+            document.querySelector('.div2').style.display = 'none'
+        }
+
+    </script>
+
+
+    <script> // script para ao cliclar no botao pagarmway ela ajuda a mostrar a div 6
+        const btnPagaMBWay = document.getElementById('btnPagaMBWay');
+
+        btnPagaMBWay.addEventListener('click', () => {
+            mostrarDiv6();
+
+
+
+
+        });
+    </script>
+
+    <script> // script para ao cliclar no botao pagarReferenciaMB ela ajuda a mostrar a div 6
+        const btnConcluirGeraReferenciaMB = document.getElementById('btnConcluirGeraReferenciaMB');
+
+        btnConcluirGeraReferenciaMB.addEventListener('click', () => {
+            mostrarDiv6();
+
+
+        });
+    </script>
+
+
+
+<script> // script para ao cliclar no btnConcluirCC cc ela ajuda a mostrar a div 6
+    const btnConcluirCC  = document.getElementById('btnConcluirCC');
+
+    btnConcluirCC.addEventListener('click', () => {
+        mostrarDiv6();
+
+
+    });
+</script>
+
+    <!-- 
+ Atualizações feitas na madrugada  -->
+
+    <style>
+        .footer {
+            padding-top: 0.5px;
+            padding-bottom: 0px;
+        }
+    </style>
+
+
+</body>
+
+</html>

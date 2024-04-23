@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Aria is a business focused HTML landing page template built with Bootstrap to help you create lead generation websites for companies and their services.">
+    <meta name="author" content="Inovatik">
+
+    <!-- OG Meta Tags to improve the way the post looks when you share the page on LinkedIn, Facebook, Google+ -->
+	<meta property="og:site_name" content="" /> <!-- website name -->
+	<meta property="og:site" content="" /> <!-- website link -->
+	<meta property="og:title" content=""/> <!-- title shown in the actual shared post -->
+	<meta property="og:description" content="" /> <!-- description shown in the actual shared post -->
+	<meta property="og:image" content="" /> <!-- image link, make sure it's jpg -->
+	<meta property="og:url" content="" /> <!-- where do you want your post to link to -->
+	<meta property="og:type" content="article" />
+
+    <!-- Website Title -->
+    <title>Activities For All</title>
+    
+    <!-- Styles -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:500,700&display=swap&subset=latin-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600&display=swap&subset=latin-ext" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/fontawesome-all.css" rel="stylesheet">
+    <link href="css/swiper.css" rel="stylesheet">
+	  <link href="css/magnific-popup.css" rel="stylesheet">
+	  <link href="css/styles.css" rel="stylesheet">
+    <link href="css/geral.css" rel="stylesheet">
+    <link href="css/login.css" rel="stylesheet">
+	
+	<!-- Favicon  -->
+    <link rel="icon" href="images/favicon.png">
+</head>
+<body data-spy="scroll" data-target=".fixed-top">
+    
+    <!-- Preloader -->
+	<div class="spinner-wrapper">
+        <div class="spinner">
+            <div class="bounce1"></div>
+            <div class="bounce2"></div>
+            <div class="bounce3"></div>
+        </div>
+    </div>
+    <!-- end of preloader -->
+
+    <!-- Login Modal-->
+    <div>
+      <div class="hide d-flex flex-column align-items-center" id="fade">
+          <div id="modal" class="hide">
+              <div class="modal-body">
+                  <input type="checkbox" id="chk" aria-hidden="true">
+  
+                      <p id="close-modal" class="d-flex justify-content-end">X</p>
+                      <div class="signup">
+                          <form class="signupForm" action=""><!--  onsubmit="bd/registoConta(); return false;" -->
+                              <div class="signupFormHeader d-flex flex-column justify-content-center align-items-center">
+                                  <label for="chk" aria-hidden="true">Sign up</label>
+                                  <div id="signUpGoogle"></div>
+                                          
+                              </div>
+                              <input type="text" name="txt" placeholder="Nome" required="true" class="inputSignUp">
+                              <input type="email" name="email" placeholder="Email" required="true" class="inputSignUp">
+                              <input type="password" name="pswd" placeholder="Password" required="true" class="inputSignUp">
+                              <input type="password" name="rptpswd" placeholder="Repetir password" required="true" class="inputSignUp">
+                              <select name="genero" class="inputSignUp">
+                                  <option value="masculino">Masculino</option>
+                                  <option value="feminino">Feminino</option>
+                              </select>
+                              <button class="formButton formButtonSignUp" type="submit">Sign up</button>
+                          </form>
+                      </div>
+          
+                      <div class="login">
+                          <form>
+                              <label for="chk" aria-hidden="true">Login</label>
+                              <div id="loginGoogle" class="d-flex flex-column align-items-center"></div>
+  
+                              <input class="loginInput" type="email" name="email" placeholder="Email" required="true">
+                              <input class="loginInput" type="password" name="pswd" placeholder="Password" required="true">
+                              <button class="formButton formButtonLogin">Login</button>
+                          </form>
+                          <div class="maisInfo d-flex flex-column justify-content-center align-items-center p-3">
+                              <a href="#" class="esquecimePassword">Esqueci-me da password!</a>
+                              <!--  <label for="chk" aria-hidden="true">Criar Conta!</label> -->
+                          </div>
+                              
+                      </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <!-- End of login modal\ -->
+  
+    
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md navbar-dark navbar-custom fixed-top">
+        <!-- Text Logo - Use this if you don't have a graphic logo -->
+        <!-- <a class="navbar-brand logo-text page-scroll" href="index.html">Aria</a> -->
+
+        <!-- Image Logo -->
+        <a class="navbar-brand logo-image" href="index.html"><img src="images/LogoSemFundo.png" alt="alternative"></a>
+        
+        <!-- Mobile Menu Toggle Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-awesome fas fa-bars"></span>
+            <span class="navbar-toggler-awesome fas fa-times"></span>
+        </button>
+        <!-- end of mobile menu toggle button -->
+
+        <div id="colocarNavBarItems"></div>
+        
+    </nav> <!-- end of navbar -->
+    <!-- end of navbar -->
+
+
+    <!-- Header -->
+    <header id="headerH" class="header">
+        <div class="header-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="text-container">
+                            <h1>Perguntas Frequentes</h1>
+                        </div>
+                    </div> <!-- end of col -->
+                </div> <!-- end of row -->
+            </div> <!-- end of container -->
+        </div> <!-- end of header-content -->
+    </header> <!-- end of header -->
+    <!-- end of header -->
+
+    <div class="main">
+        <div id="accordion">
+            <div class="card">
+              <div class="card-header" id="headingOne">
+                <h5 class="mb-0">
+                  <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                    1. Quais são os requisitos para participar das atividades?
+                  </button>
+                </h5>
+              </div>
+          
+              <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                <div class="card-body">
+                    Para participar das atividades oferecidas pela nossa empresa no Algarve, existem alguns requisitos que devem ser atendidos pelos participantes. Esses requisitos visam garantir a segurança e o bem-estar dos participantes durante as atividades, além de garantir a qualidade da experiência que oferecemos.
+                    A seguir, listamos alguns dos requisitos mais comuns para participar das atividades:<br />
+                    <ol>
+                        <li>Idade mínima: Algumas atividades podem ter uma idade mínima estabelecida para garantir a segurança e o bom desempenho do participante. Essa idade mínima pode variar de acordo com a atividade em questão.</li>
+                        <li>Condição física: Algumas atividades podem exigir um nível mínimo de condicionamento físico dos participantes para garantir que eles sejam capazes de realizar a atividade com segurança e conforto.</li>
+                        <li>Altura e peso: Algumas atividades podem ter restrições de altura e peso para garantir a segurança do participante e a adequação do equipamento utilizado.</li>
+                        <li>Experiência prévia: Algumas atividades podem exigir experiência prévia para garantir a segurança do participante e o bom desempenho da atividade.</li>
+                        <li>Equipamentos pessoais: Em algumas atividades, pode ser necessário que o participante forneça equipamentos pessoais, como roupas adequadas, sapatos apropriados, óculos de sol, protetor solar e outros itens.</li>
+                    </ol>
+                    É importante ressaltar que os requisitos para cada atividade podem variar, então é fundamental que o participante se informe antecipadamente sobre as exigências específicas da atividade em que deseja participar. A nossa equipe está sempre disponível para esclarecer dúvidas e ajudar os participantes a se prepararem da melhor forma possível para a atividade escolhida.
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingTwo">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    2. Qual é a nossa política de cancelamento e reembolso?
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                <div class="card-body">
+                    Entendemos que os planos dos nossos clientes podem mudar e, por isso, oferecemos uma política de cancelamento e reembolso flexível. Caso seja necessário cancelar a participação em uma atividade, é importante entrar em contato conosco o mais cedo possível para que possamos ajudá-lo a resolver a situação da melhor forma possível.
+                    <br /><br />
+                    A nossa política de cancelamento e reembolso pode variar de acordo com o tipo de atividade e a antecedência do cancelamento. Em geral, recomendamos que os clientes leiam atentamente as condições de cancelamento e reembolso na hora da reserva da atividade para que possam se informar sobre as possibilidades de cancelamento e os prazos para solicitar um reembolso.
+                    <br /><br />
+                    Para cancelamentos feitos com antecedência mínima de 24 horas em relação ao horário de início da atividade, oferecemos um reembolso integral. Já para cancelamentos feitos com menos de 24 horas de antecedência, o reembolso pode estar sujeito a uma taxa de cancelamento. No caso de não comparecimento no dia da atividade, não há direito a reembolso.
+                    <br /><br />
+                    Em caso de cancelamento de atividades devido a condições climáticas adversas ou outras circunstâncias fora do controle da nossa empresa, oferecemos a opção de reagendar a atividade para outra data ou um reembolso integral.
+                    <br /><br />
+                    O nosso objetivo é sempre oferecer uma experiência positiva aos nossos clientes e, por isso, trabalhamos para garantir que nossa política de cancelamento e reembolso seja justa e transparente. Se você tiver alguma dúvida ou precisar cancelar a sua reserva, não hesite em entrar em contato com a nossa equipe de atendimento ao cliente para que possamos ajudá-lo da melhor forma possível.
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingThree">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    3. As atividades incluem equipamentos e materiais necessários ou é preciso trazer algo?
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                <div class="card-body">
+                    Preocupamo-nos em oferecer a melhor experiência aos nossos clientes e, para isso, disponibilizamos todos os equipamentos e materiais necessários para a realização das atividades. Em geral, os equipamentos e materiais necessários são fornecidos pela nossa empresa e incluem itens como coletes salva-vidas, capacetes, pranchas, caiaques, entre outros.
+                    <br /><br />
+                    No entanto, é importante lembrar que as necessidades podem variar de acordo com a atividade escolhida, e por isso, recomendamos que os participantes verifiquem antecipadamente se há algum equipamento ou material específico que precisam trazer consigo. Essas informações podem ser encontradas na descrição da atividade no nosso site, e nossa equipa também está sempre disponível para esclarecer quaisquer dúvidas.
+                    <br /><br />
+                    Além disso, é importante que os participantes tragam consigo alguns itens pessoais, como roupas adequadas para a atividade (como roupa de banho, ténis ou sandálias), protetor solar, chapéu ou boné, toalha e água. Se necessário, nossa equipa pode oferecer recomendações específicas para cada atividade.
+                    <br /><br />
+                    Nossa empresa está comprometida em oferecer uma experiência segura e confortável para todos os participantes das atividades, e por isso, garantimos a qualidade e a manutenção regular de todos os equipamentos e materiais fornecidos. Se você tiver alguma dúvida sobre os equipamentos e materiais necessários para a atividade escolhida, não hesite em entrar em contato conosco. Estamos aqui para ajudá-lo a ter a melhor experiência possível!
+                </div>
+              </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingFour">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                      4. É preciso ter experiência prévia para participar das atividades?
+                    </button>
+                  </h5>
+                </div>
+                <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                  <div class="card-body">
+                    Não é necessário ter experiência prévia para participar das atividades oferecidas pela nossa empresa no Algarve. Nós oferecemos atividades para pessoas de todos os níveis de habilidade, desde iniciantes até pessoas mais experientes.
+                    <br /><br />
+                    Antes de iniciar qualquer atividade, os participantes passam por uma breve orientação e treinamento, que cobrem os principais aspectos de segurança, técnicas e habilidades necessárias para a atividade em questão. Nossos instrutores são experientes e qualificados para oferecer orientação individual e ajudar os participantes a desenvolver suas habilidades.
+                    <br /><br />
+                    Nós nos preocupamos em garantir que todos os participantes tenham uma experiência segura e agradável durante as atividades. Por isso, é importante que os participantes escolham atividades que estejam de acordo com seu nível de habilidade e que sigam as instruções e orientações dos instrutores.
+                    <br /><br />
+                    Se você tiver alguma dúvida sobre o nível de habilidade necessário para uma atividade específica, nossa equipe está sempre disponível para ajudá-lo a escolher a melhor opção para você. Temos uma ampla variedade de atividades para atender a todos os interesses e níveis de habilidade. Não hesite em entrar em contato conosco para mais informações. Estamos ansiosos para compartilhar as maravilhosas atividades no Algarve com você!
+                  </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingSix">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                      5. As atividades são seguras?
+                    </button>
+                  </h5>
+                </div>
+                <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordion">
+                  <div class="card-body">
+                    A segurança dos nossos clientes é a nossa principal preocupação. Todas as atividades que oferecemos no Algarve são cuidadosamente projetadas e supervisionadas por nossos instrutores altamente qualificados e experientes, que possuem amplo conhecimento sobre as atividades em questão.
+                    <br /><br />
+                    Antes de iniciar qualquer atividade, os participantes recebem uma explicação detalhada sobre as medidas de segurança e o uso correto do equipamento de proteção individual necessário para cada atividade. Além disso, realizamos verificações regulares de segurança em todos os equipamentos e materiais utilizados nas atividades para garantir que estejam em boas condições.
+                    <br /><br />
+                    Mantemos contato próximo com as condições climáticas locais, monitorando constantemente as condições do mar e do vento antes de cada atividade. Caso as condições sejam consideradas inseguras, a atividade pode ser cancelada ou adiada para garantir a segurança dos participantes.
+                    <br /><br />
+                    Estamos sempre disponíveis para discutir qualquer dúvida ou preocupação que possa ter sobre a segurança das atividades. Acreditamos que a melhor maneira de garantir a segurança é através da prevenção e da educação, por isso, investimos em treinamento contínuo e atualização dos nossos instrutores e guias para fornecer a melhor experiência em termos de segurança e diversão para nossos clientes.
+                  </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingSix">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                      6. É possível comprar vouchers para as atividades como presente?
+                    </button>
+                  </h5>
+                </div>
+                <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordion">
+                  <div class="card-body">
+                    De momento não.
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- Footer -->
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="text-container contactos">
+                    <h4>Contactos</h4>
+                    <ul class="list-unstyled li-space-lg white">
+                      <div>
+                        <li>
+                            <i class="fa fa-phone" ></i>
+                            <a class="white" href="#your-link">+351 939393939</a> (chamada para rede móvel nacional).
+                        </li>
+                      </div>
+                      <div>
+                        <li>
+                            <i class="fa fa-envelope" ></i>
+                            <a class="white" href="terms-conditions.html"> activitiesforall.algarve@gmail.com</a>
+                        </li>
+                      </div>
+                      <div>
+                        <li>
+                            <i class="fa fa-map-marker" aria-hidden="true"></i>
+                            <a class="white" href="privacy-policy.html">Av. Tomás Cabreira, Portimão, Algarve, 8500-802, PT</a>
+                        </li>
+                      </div>
+                    </ul>
+                </div> <!-- end of text-container -->
+            </div> <!-- end of col -->
+            <div class="col-md-2">
+                <div class="text-container">
+                    <h4>Links rápidos</h4>
+                    <ul class="list-unstyled li-space-lg white">
+                        <li>
+                            <a class="white" href="#your-link">Inicio</a>
+                        </li>
+                        <li>
+                            <a class="white" href="index.html">Todas as Atividades   </a>
+                        </li>
+                        <li>
+                            <a class="white" href="Frotas.html">Frota</a>
+                        </li>
+                        <li>
+                            <a class="white" href="FAQ.html">FAQ</a>
+                        </li>
+                        <li>
+                            <a class="white" href="PDP.html">Políticas de Privacidade</a>
+                        </li>
+                    </ul>
+                </div> <!-- end of text-container -->
+            </div> <!-- end of col -->
+            <!-- <div class="col-md-2">
+                <div class="text-container">
+                    <h4>Tools</h4>
+                    <ul class="list-unstyled li-space-lg">
+                        <li>
+                            <a class="white" href="#your-link">businessgrowth.com</a>
+                        </li>
+                        <li>
+                           <a class="white" href="#your-link">influencers.com</a>
+                        </li>
+                        <li class="media">
+                            <a class="white" href="#your-link">optimizer.net</a>
+                        </li>
+                    </ul>
+                </div> end of text-container
+            </div> end of col 
+            <div class="col-md-2">
+                <div class="text-container">
+                    <h4>Partners</h4>
+                    <ul class="list-unstyled li-space-lg">
+                        <li>
+                            <a class="white" href="#your-link">unicorns.com</a>
+                        </li>
+                        <li>
+                            <a class="white" href="#your-link">staffmanager.com</a>
+                        </li>
+                        <li>
+                            <a class="white" href="#your-link">association.gov</a>
+                        </li>
+                    </ul>
+                </div> end of text-container
+            </div> end of col -->
+        </div> <!-- end of row -->
+    </div> <!-- end of container -->
+  </div> <!-- end of footer -->  
+  <!-- end of footer -->
+  
+  
+      <!-- Copyright -->
+      <div class="copyright">
+          <div class="container">
+              <div class="row">
+                  <div class="col-lg-12">
+                      <p class="p-small">Activities for All - Grupo 104 @2023</p>
+                  </div> <!-- end of col -->
+              </div> <!-- enf of row -->
+          </div> <!-- end of container -->
+      </div> <!-- end of copyright --> 
+      <!-- end of copyright -->
+      
+          
+    	
+    <!-- Scripts -->
+    <script src="js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
+    <script src="js/popper.min.js"></script> <!-- Popper tooltip library for Bootstrap -->
+    <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
+    <script src="js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
+    <script src="js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
+    <script src="js/jquery.magnific-popup.js"></script> <!-- Magnific Popup for lightboxes -->
+    <script src="js/morphext.min.js"></script> <!-- Morphtext rotating text in the header -->
+    <script src="js/isotope.pkgd.min.js"></script> <!-- Isotope for filter -->
+    <script src="js/validator.min.js"></script> <!-- Validator.js - Bootstrap plugin that validates forms -->
+    <script src="js/scripts.js"></script> <!-- Custom scripts -->
+
+    <script type="module" src="./bd/bd.js"></script> <!-- bd script -->
+    <script src="./js/navbar.js"></script> <!-- para fazer a navbar -->
+    <script type="module" src="./js/autenticacaoFrontEnd.js"></script> <!-- botão de login -->
+
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <script src="https://unpkg.com/jwt-decode/build/jwt-decode.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsSHA/2.0.2/sha.js"></script>
+
+    <script type="module" src="js/apis/google.js"></script><!-- Script login google-->
+  </body>
+</html>

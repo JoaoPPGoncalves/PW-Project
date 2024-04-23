@@ -1,0 +1,248 @@
+/*
+:root {
+	--green: #1cbd2c;
+	--grey: #c4c4c4;
+	--white: #ffffff;
+	--padding: 1em;
+}
+
+* {
+	padding: 0;
+	border: 0;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	width: 100vw;
+	overflow: hidden;
+	font-family: Helvetica, sans-serif;
+}
+*/
+
+.main{
+	padding-bottom: 0%;
+}
+
+.mainWrapper {
+	width: 100ch;
+	min-width: 40ch;
+	max-width: 75vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.statusBar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0;
+	width: 100%;
+	position: relative;
+	cursor: default;
+}
+
+.statusBar::before {
+	content: "";
+	height: 0.3em;
+	background-color: var(--grey);
+	position: absolute;
+	left: var(--padding);
+	right: var(--padding);
+}
+
+.pBar {
+	content: "";
+	height: 0.3em;
+	border-radius: 0 0 0.15em 0.15em;
+	background-color: #14BF98;
+	max-width: 100%;
+	margin: 10px #000000 solid;
+	position: absolute;
+	left: 0;
+	width: 0%;
+}
+
+.statusBar>.node {
+	background-color: #14BF98;
+	height: 1.2em;
+	width: 1.2em;
+	border-radius: 100%;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.node>.text {
+	font-weight: 200;
+	color: var(--grey);
+	text-align: center;
+	position: absolute;
+	top: 2.5em;
+	cursor: auto;
+}
+
+.node.done {
+	background-color: #14BF98;
+}
+
+.node>.text.done {
+	color: #14BF98;
+}
+
+.node>.main {
+	position: absolute;
+	border: 0.2em var(--grey) solid;
+	width: 0;
+	height: 0;
+	border-radius: 100%;
+}
+
+.node>.main.done {
+	border: 0.2em #14BF98 solid;
+	width: 2em;
+	height: 2em;
+	border-radius: 100%;
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+
+.mainWrapper>.buttonHolder {
+	margin-top: 3em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.button {
+	padding: 0.5em;
+	padding-left: 1em;
+	padding-right: 1em;
+	margin: 1em;
+	font-size: 1.3em;
+	border-radius: 1.5em;
+	cursor: pointer;
+}
+
+.button.b-next {
+	background-color: #14BF98;
+	color: var(--white);
+}
+
+.button.b-next:hover {
+	box-shadow: 3px 5px 6px 0px rgba(0, 0, 0, 0.2);
+}
+
+.button.disabled,
+.button.disabled:hover {
+	opacity: 30%;
+	cursor: default;
+}
+
+.button.b-next.disabled:hover {
+	box-shadow: none;
+}
+
+.button.b-back {
+	box-shadow: 0px 0px 0px 0.2em #14BF98 inset;
+	background-color: var(--white);
+	color: #14BF98;
+}
+
+.made {
+	position: absolute;
+	bottom: 0.7em;
+}
+
+.made>.credit {
+	opacity: 40%;
+	color: #4b4b4b;
+	text-align: center;
+}
+
+
+/* Aqui está o estilo da div 2 meio de pagamento*/
+
+.container {
+	height: 400px;
+	width: 800px;
+	margin-top: 6%;
+	margin-left: 29%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.quadrado {
+	width: 350px;
+	height: 200px;
+	background-color: #ffffff;
+	border: #14BF98;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+	/* adiciona sombra */
+	padding: 20px;
+	margin: 0 10px;
+
+}
+
+.meuperfil{
+	display: inline-block;
+	padding: 15px 25px;
+	font-size: 24px;
+	cursor: pointer;
+	text-align: center;	
+	text-decoration: none;
+	outline: none;
+	color: #fff;
+	background-color: #14BF98;
+	border: none;
+	border-radius: 15px;
+	box-shadow: 0 9px #999;
+  }
+  
+  .meuperfil:hover {background-color: #14BF98}
+  
+  .meuperfil:active {
+	background-color: #14BF98;
+	box-shadow: 0 5px #666;
+	transform: translateY(4px);
+  }
+  
+
+.quadrado:hover{
+	background-color: white;
+}
+
+#lblEstadoPagamentoTitulo1, #divEstadoPagamentoLinha2, #divEstadoPagamentoLinha3, #divEstadoPagamentoLinha4 {
+	display:flex;
+	flex-direction: row;
+}
+
+#lblEstadoPagamentoTitulo1, #lblEstadoPagamentoTitulo2, #lblEstadoPagamentoTitulo3, #lblEstadoPagamentoTitulo4, #lblEstadoPagamentoEstadoTitulo {
+	color: black;
+	font-size: 20px;
+	margin: 0px;
+	cursor: default;
+}
+
+
+
+
+  /* Atualizações feitas na madrugada */
+
+  

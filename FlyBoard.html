@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- SEO Meta Tags -->
+    <meta name="description"
+        content="Aria is a business focused HTML landing page template built with Bootstrap to help you create lead generation websites for companies and their services.">
+    <meta name="author" content="Inovatik">
+
+    <!-- OG Meta Tags to improve the way the post looks when you share the page on LinkedIn, Facebook, Google+ -->
+    <meta property="og:site_name" content="" /> <!-- website name -->
+    <meta property="og:site" content="" /> <!-- website link -->
+    <meta property="og:title" content="" /> <!-- title shown in the actual shared post -->
+    <meta property="og:description" content="" /> <!-- description shown in the actual shared post -->
+    <meta property="og:image" content="" /> <!-- image link, make sure it's jpg -->
+    <meta property="og:url" content="" /> <!-- where do you want your post to link to -->
+    <meta property="og:type" content="article" />
+
+    <!--*** CALENDÁRIO***-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .input-group-append {
+            cursor: pointer;
+        }
+
+        body {
+            /*margin:40px !important;*/
+            max-width: 100% !important;
+        }
+
+        nav {
+            width: 100% !important;
+            box-sizing: border-box !important;
+        }
+    </style>
+    <!-- Website Title -->
+    <title>Activities For All</title>
+
+    <!-- Styles -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:500,700&display=swap&subset=latin-ext"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600&display=swap&subset=latin-ext"
+        rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/fontawesome-all.css" rel="stylesheet">
+    <link href="css/swiper.css" rel="stylesheet">
+    <link href="css/magnific-popup.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="css/geral.css" rel="stylesheet">
+    <link href="css/PlusMinusButton.css" rel="stylesheet">
+    <link href="css/Marcacao.css" rel="stylesheet">
+    <link href="css/FlyBoard.css" rel="stylesheet">
+    <link href="css/login.css" rel="stylesheet">
+
+    <!-- Logo favicon  -->
+    <link rel="icon" href="images/LogoAzul.png">
+
+    <!--***** Código para deixar o conteudo de "PROCURAR DISPONIBILIDADE" invisível-->
+    <style>
+        #HorasDisponiveis {
+            display: none;
+        }
+    </style>
+
+    <!-- fim do PROCURAR DISPONIBILIDADE-->
+
+</head>
+
+<body data-spy="scroll" data-target=".fixed-top">
+
+    <!-- Preloader -->
+    <div class="spinner-wrapper">
+        <div class="spinner">
+            <div class="bounce1"></div>
+            <div class="bounce2"></div>
+            <div class="bounce3"></div>
+        </div>
+    </div>
+    <!-- end of preloader -->
+
+        <!-- Login Modal-->
+        <div>
+            <div class="hide d-flex flex-column align-items-center" id="fade">
+                <div id="modal" class="hide">
+                    <div class="modal-body">
+                        <input type="checkbox" id="chk" aria-hidden="true">
+        
+                            <p id="close-modal" class="d-flex justify-content-end">X</p>
+                            <div class="signup">
+                                <form class="signupForm" action=""><!--  onsubmit="bd/registoConta(); return false;" -->
+                                    <div class="signupFormHeader d-flex flex-column justify-content-center align-items-center">
+                                        <label for="chk" aria-hidden="true">Sign up</label>
+                                        <div id="signUpGoogle"></div>
+                                                
+                                    </div>
+                                    <input type="text" name="txt" placeholder="Nome" required="true" class="inputSignUp">
+                                    <input type="email" name="email" placeholder="Email" required="true" class="inputSignUp">
+                                    <input type="password" name="pswd" placeholder="Password" required="true" class="inputSignUp">
+                                    <input type="password" name="rptpswd" placeholder="Repetir password" required="true" class="inputSignUp">
+                                    <select name="genero" class="inputSignUp">
+                                        <option value="masculino">Masculino</option>
+                                        <option value="feminino">Feminino</option>
+                                    </select>
+                                    <button class="formButton formButtonSignUp" type="submit">Sign up</button>
+                                </form>
+                            </div>
+                
+                            <div class="login">
+                                <form>
+                                    <label for="chk" aria-hidden="true">Login</label>
+                                    <div id="loginGoogle" class="d-flex flex-column align-items-center"></div>
+        
+                                    <input class="loginInput" type="email" name="email" placeholder="Email" required="true">
+                                    <input class="loginInput" type="password" name="pswd" placeholder="Password" required="true">
+                                    <button class="formButton formButtonLogin">Login</button>
+                                </form>
+                                <div class="maisInfo d-flex flex-column justify-content-center align-items-center p-3">
+                                    <a href="#" class="esquecimePassword">Esqueci-me da password!</a>
+                                    <!--  <label for="chk" aria-hidden="true">Criar Conta!</label> -->
+                                </div>
+                                    
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End of login modal\ -->
+
+
+   <!-- Navbar -->
+   <nav class="navbar navbar-expand-md navbar-dark navbar-custom fixed-top">
+    <!-- Text Logo - Use this if you don't have a graphic logo -->
+    <!-- <a class="navbar-brand logo-text page-scroll" href="index.html">Aria</a> -->
+
+    <!-- Image Logo -->
+    <a class="navbar-brand logo-image" href="index.html"><img src="images/LogoSemFundo.png" alt="alternative"></a>
+    
+    <!-- Mobile Menu Toggle Button -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-awesome fas fa-bars"></span>
+        <span class="navbar-toggler-awesome fas fa-times"></span>
+    </button>
+    <!-- end of mobile menu toggle button -->
+
+    <div id="colocarNavBarItems"></div>
+</nav> <!-- end of navbar -->
+<!-- end of navbar -->
+
+
+    <!-- Header -->
+    <header id="headerGB" class="header">
+
+        <div class="header-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="text-container">
+                            <h1>FLYBOARD FOR YOU <span id="js-rotating">ALL, YOU, US</span></h1>
+                            <p class="p-heading p-large">Voe mais alto, sinta a adrenalina e descubra uma nova forma de
+                                liberdade com o Flyboard!</n>
+                            </p>
+                            <a class="btn-solid-lg page-scroll" href="#intro">SABER MAIS</a>
+                        </div>
+                    </div> <!-- end of col -->
+                </div> <!-- end of row -->
+            </div> <!-- end of container -->
+        </div> <!-- end of header-content -->
+    </header> <!-- end of header -->
+    <!-- end of header -->
+
+
+
+
+    <!--*** PARA QUE FAZER JETSKI  ****-->
+    <div id="intro" class="basic-1">
+        <div class="container">
+            <div class="row">
+                <div class="text-container">
+                    <!-- <div class="section-title">QUEM SOMOS</div> -->
+                    <h2 style="padding-right:10%;" class="porqueseriabom"> Porque seria bom ter a experiência no
+                        Flyboard?</h2>
+                    <p>Ter a experiência no Flyboard é uma oportunidade única para vivenciar momentos emocionantes e
+                        desfrutar de uma aventura aquática inesquecível.Com o Flyboard, você terá a oportunidade de
+                        desafiar a gravidade e deslizar sobre as águas como nunca imaginou. Não importa se você é um
+                        novato ou um aventureiro experiente, o Flyboard é para todos. O nosso objetivo é garantir que se
+                        sinta seguro e confiante durante todo o voo, contando com a orientação dos nossos instrutores
+                        experientes.</p>
+                   
+                </div> <!-- end of text-container -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of basic-1 -->
+    <!-- end of intro -->
+
+
+    <!-- Description -->
+    <div class="cards-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+
+                    <!-- Card -->
+                    <div class="card">
+                        <span class="fa-stack">
+                            <span class="hexagon"></span>
+                            <i class="fa fa-info-circle fa-stack-1x"></i>
+                        </span>
+                        <div class="card-body">
+                            <h4 class="card-title">Informação Detalhada</h4>
+                            <p>Têm direito a: <br>-10 minutos no ar.<br>- Se selecionar a opção cacifo no site, não tem
+                                custos adicionais (caso contrário, custo 1€). <br></p>
+                        </div>
+                    </div>
+                    <!-- end of card -->
+
+                    <!-- Card -->
+                    <div class="card">
+                        <span class="fa-stack">
+                            <span class="hexagon"></span>
+                            <i class="fa fa-lock fa-stack-1x"></i>
+                        </span>
+                        <div class="card-body">
+                            <h4 class="card-title">Proteção de Bens</h4>
+                            <p>Cada pessoa terá o direito a decidir se pretende reservar cacifo para guardar os bens
+                                pessoais, uma vez que estes não se podem levar para a experiência.</p>
+                        </div>
+                    </div>
+                    <!-- end of card -->
+
+                    <!-- Card -->
+                    <div class="card">
+                        <span class="fa-stack">
+                            <span class="hexagon"></span>
+                            <i class="fa fa-user fa-stack-1x"></i>
+                        </span>
+                        <div class="card-body">
+                            <h4 class="card-title">Condições do Cliente</h4>
+                            <p>Esta experiência não é aconselhável para pessoas:
+                                <br> - Grávidas.
+                                <br> - Com Problemas Cardíacos.
+                                <br> - Com Problemas de Costas e Pescoço.
+                                <br> - Com menos de 10 anos de idade.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- end of card -->
+
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of cards-1 -->
+    <!-- end of description -->
+
+
+
+    <!-- *** PREÇARIO GRUTAS BENAGIL **-->
+    <div id="services" class="cards-2Precos">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title">PREÇÁRIO</div>
+                    <h2>Escolha o Pacote<br> que personaliza a sua experiência</h2>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+
+                    <!-- Card -->
+                    <div id="Card2PrecosJet" class="card">
+                        <div class="card-image">
+                            <img style="width:400px; height:190px;" class="img-fluid" src="images/Flyboard.jpg"
+                                alt="alternative">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">Preço Adulto</h3>
+                            <p>(+ 10 anos)</p>
+                            <ul class="list-unstyled li-space-lg">
+                                <li class="media">
+                                    <i class="fas fa-square"></i>
+                                    <div class="media-body">10 mins no ar </div>
+                                </li>
+
+                            </ul>
+                            <p class="price"><span>80€</span></p>
+                        </div>
+                        <div class="button-container">
+                            <a class="btn-solid-reg page-scroll" href="#callMe">COMPRAR</a>
+                        </div> <!-- end of button-container -->
+                    </div>
+                    <!-- end of card -->
+
+                    <!-- Card -->
+                    <div id="Card2PrecosJet" class="card">
+                        <div class="card-image">
+                            <img style="width:400px; height:190px; margin-left: 0%;"  class="img-fluid" src="images/FlyBoard1.jpg"
+                                alt="alternative">
+                        </div>
+
+                        <div class="card-body" style="">
+                            <h3 class="card-title">Preço Adulto</h3>
+                            <p>(+ 10 anos)</p>
+                            <ul class="list-unstyled li-space-lg">
+                                <li class="media">
+                                    <i class="fas fa-square"></i>
+                                    <div class="media-body">20 mins no ar </div>
+                                </li>
+
+                            </ul>
+                            <p class="price"><span>140€</span></p>
+                        </div>
+                        <div  class=" button-container">
+                            <a class="btn-solid-reg page-scroll" href="#callMe">COMPRAR</a>
+                        </div> <!-- end of button-container -->
+                    </div>
+                    <!-- end of card -->
+
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of cards-2 -->
+    <!-- end of services -->
+
+
+    <!-- Call Me -->
+    <div id="callMe" class="form-1">
+        <div style="text-align: left; padding-left: 9%; margin-top: 0%" class="section-title">RESERVAR</div>
+        <h2 style="text-align: left; padding-left: 9%;" class="white">Reserve a sua experiência de JetSki connosco!
+        </h2>
+        <div class="row">
+            <div style="padding-left: 0px;" id="col-md-6">
+                <!-- ****** Div do Calendário-->
+                <div class="text-container">
+                    <div style="margin-left: 1%; margin-right: 0%; margin-top: 0%;" class="text-container">
+                        <label for="date" class="col-1 col-form-label">Data</label>
+                        <div class="input-group date" id="datepicker">
+                            <input type="text" class="form-control" id="date" />
+                            <span class="input-group-append">
+                                <span style="width: 30px;" class="input-group-text bg-light d-block">
+                                    <i class="fa fa-calendar"></i>
+                                </span>
+                            </span>
+                        </div>
+                        <!-- ********  ADICIONAR O CALENDÁRIO AQUI ************-->
+                    </div>
+
+                    <!--***** ESTA DIV SÓ É MOSTRADA SE O CLIENTE CARREGAR NO PROCURAR DISPONIBILIDADE-->
+                    <div style="padding-top: 2%;" id="HorasDisponiveis">
+                        <div class="list-group list-group-light">
+                            <a onclick="loginOuPagamento()"
+                                class="list-group-item list-group-item-action px-3 border-0 active ripple"
+                                aria-current="true">9:00 JetSki</a>
+                            <a onclick="loginOuPagamento()"
+                                class="list-group-item list-group-item-action px-3 border-0 ripple">11:00 JetSki</a>
+                            <a onclick="loginOuPagamento()"
+                                class="list-group-item list-group-item-action px-3 border-0 ripple">12:00 JetSki</a>
+                            <a onclick="loginOuPagamento()"
+                                class="list-group-item list-group-item-action px-3 border-0 ripple">JetSki
+                                a ripple</a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div style="margin-left:0%; width: 30%;" id="QuantidadeBilhetesMarcacao">
+                    <div  id="QuantidadeBilhetesMarcacao"><!-- style="width: 350px;" -->
+                        <div class="LogoSemFundo" style="margin-left: -52px;">
+                            <img src="./images/LogoSemFundo.png" alt="">
+                        </div>
+
+                       
+
+                        <!--** Começa aqui o Plus Minus Button para quantidade de pessoas**-->
+                        <div class="input-group plus-minus-input" style="display: flex; align-items: center;">
+                            <p> Preço 10 minutos </p>
+                            <div class="input-group-button" style="margin-left: 16%;">
+                                <button style="color: #87C6CD; border: transparent;" type="button" id="preco1"
+                                    class="button hollow" data-quantity="minus" data-field="quantity">
+                                    <i style="color: #87C6CD; border-color: #87C6CD;" class="fa fa-minus"></i>
+                                </button>
+                            </div>
+                            <input id="preco1Input"
+                                style="border: transparent; border: transparent; border-top-color: #87C6CD; border-bottom-color:#87C6CD;"
+                                class="input-group-field" type="number" name="quantity" value="0">
+                            <div class="input-group-button">
+                                <button style="color: #87C6CD; border: transparent;" type="button" id="preco1"
+                                    class="button hollow" data-quantity="plus" data-field="quantity">
+                                    <i style="color: #87C6CD;" class="fa fa-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!--** Começa aqui o Plus Minus Button para quantidade de pessoas**-->
+                        <div class="input-group plus-minus-input" style="display: flex; align-items: center;">
+                            <p> Preço 20 minutos </p>
+                            <div class="input-group-button" style="margin-left: 16%;">
+                                <button style="color: #87C6CD; border: transparent;" type="button" id="preco2"
+                                    class="button hollow " data-quantity="minus" data-field="quantity">
+                                    <i style="color: #87C6CD; border-color: #87C6CD;" class="fa fa-minus"></i>
+                                </button>
+                            </div>
+                            <input id="preco2Input"
+                                style="border: transparent; border: transparent; border-top-color: #87C6CD; border-bottom-color:#87C6CD;"
+                                class="input-group-field" type="number" name="quantity" value="0">
+                            <div class="input-group-button">
+                                <button style="color: #87C6CD; border: transparent;" type="button" id="preco2"
+                                    class="button hollow " data-quantity="plus" data-field="quantity">
+                                    <i style="color: #87C6CD;" class="fa fa-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <!--* acaba aqui *-->
+                    </div>
+                </div> <!-- end of row -->
+            </div> <!-- end of col -->
+        </div>
+        <button style="width: 25%; text-align: center; margin-left: 20%;" id="btn-CheckIn" class="btn-solid-lg"
+            onclick="horas()">FAZER RESERVA</button>
+
+    </div>
+
+
+
+    <!-- Testimonials -->
+    <div class="slider">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2>Feedback de Clientes Anteriores</h2>
+                    <p class="p-heading">Alguns dos nossos clientes anteriores resolveram deixar comentários sobre a
+                        atividade</p>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+            <div class="row">
+                <div class="col-lg-12">
+
+                    <!-- Card Slider -->
+                    <div class="slider-container">
+                        <div class="swiper-container card-slider">
+                            <div class="swiper-wrapper">
+
+                                <!-- Slide -->
+                                <div class="swiper-slide">
+                                    <div class="card">
+                                        <img class="card-image" src="images/Testimonials/Testimonials-Flyboard/men1.png"
+                                            alt="alternative">
+                                        <div class="card-body">
+                                            <div class="testimonial-text">“"Voar no Flyboard foi uma das melhores coisas
+                                                que já fiz na minha vida! A sensação de liberdade e adrenalina enquanto
+                                                eu deslizava sobre as águas foi simplesmente incrível. Foi uma
+                                                experiência única que recomendo a todos os amantes de aventura. Mal
+                                                posso esperar para repetir!”</div>
+                                            <div class="testimonial-author">João Silva</div>
+                                        </div>
+                                    </div>
+                                </div> <!-- end of swiper-slide -->
+                                <!-- end of slide -->
+
+                                <!-- Slide -->
+                                <div class="swiper-slide">
+                                    <div class="card">
+                                        <img class="card-image"
+                                            src="images/Testimonials/Testimonials-Flyboard/women1.png"
+                                            alt="alternative">
+                                        <div class="card-body">
+                                            <div class="testimonial-text">“Eu estava um pouco nervosa antes de
+                                                experimentar o Flyboard, mas assim que levantei voo, todos os medos
+                                                desapareceram. Foi uma experiência emocionante e divertida. Os
+                                                instrutores foram muito pacientes e me senti segura durante todo o
+                                                tempo. A sensação de voar e a vista panorâmica das águas foram
+                                                maravilhosas. Definitivamente, algo que todos deveriam experimentar!”
+                                            </div>
+                                            <div class="testimonial-author">Andreia Antunes</div>
+                                        </div>
+                                    </div>
+                                </div> <!-- end of swiper-slide -->
+                                <!-- end of slide -->
+
+                                <!-- Slide -->
+                                <div class="swiper-slide">
+                                    <div class="card">
+                                        <img class="card-image" src="images/Testimonials/Testimonials-Flyboard/men2.png"
+                                            alt="alternative">
+                                        <div class="card-body">
+                                            <div class="testimonial-text">“O Flyboard foi uma experiência alucinante! Eu
+                                                me senti como um super-herói voando pelos céus. As manobras que pude
+                                                realizar e a liberdade que senti foram indescritíveis. Foi um desafio
+                                                pessoal que me fez superar meus próprios limites. Recomendo a todos que
+                                                queiram viver uma aventura cheia de adrenalina e diversão. ”</div>
+                                            <div class="testimonial-author">Ricardo Miguel</div>
+                                        </div>
+                                    </div>
+                                </div> <!-- end of swiper-slide -->
+                                <!-- end of slide -->
+
+                                <!-- Slide -->
+                                <div class="swiper-slide">
+                                    <div class="card">
+                                        <img class="card-image" src="images/Testimonials/Testimonials-Flyboard/men3.png"
+                                            alt="alternative">
+                                        <div class="card-body">
+                                            <div class="testimonial-text">“Voar no Flyboard foi como realizar um sonho
+                                                de infância. Foi uma experiência empolgante e cheia de emoção. A
+                                                sensação de liberdade e a capacidade de controlar meu próprio voo foram
+                                                inigualáveis. Foi um momento único que me deixou com uma sensação de
+                                                conquista e felicidade. Recomendo a todos que desejam experimentar algo
+                                                realmente incrível!” </div>
+                                            <div class="testimonial-author">Mário Baixinho</div>
+                                        </div>
+                                    </div>
+                                </div> <!-- end of swiper-slide -->
+                                <!-- end of slide -->
+
+                                <!-- Slide -->
+                                <div class="swiper-slide">
+                                    <div class="card">
+                                        <img class="card-image"
+                                            src="images/Testimonials/Testimonials-Flyboard/women2.png"
+                                            alt="alternative">
+                                        <div class="card-body">
+                                            <div class="testimonial-text">"Voar no Flyboard foi uma experiência
+                                                verdadeiramente libertadora. Foi como se eu estivesse deixando para trás
+                                                todas as preocupações e simplesmente me divertindo. A vista panorâmica
+                                                do oceano e a sensação de estar flutuando foram mágicas. Foi uma ótima
+                                                maneira de superar medos e aproveitar a emoção de uma atividade tão
+                                                única. Recomendo a todos que queiram se desafiar e sentir-se vivos!"
+
+                                            </div>
+                                            <div class="testimonial-author">Sónia Silva </div>
+                                        </div>
+                                    </div>
+                                </div> <!-- end of swiper-slide -->
+                                <!-- end of slide -->
+
+                                <!-- Slide -->
+                                <div class="swiper-slide">
+                                    <div class="card">
+                                        <img class="card-image"
+                                            src="images/Testimonials/Testimonials-Flyboard/women3.png"
+                                            alt="alternative">
+                                        <div class="card-body">
+                                            <div class="testimonial-text"> "Voar no Flyboard foi uma experiência
+                                                verdadeiramente libertadora. Foi como se eu estivesse deixando para trás
+                                                todas as preocupações e simplesmente me divertindo. A vista panorâmica
+                                                do oceano e a sensação de estar flutuando foram mágicas. Foi uma ótima
+                                                maneira de superar medos e aproveitar a emoção de uma atividade tão
+                                                única. Recomendo a todos que queiram se desafiar e sentir-se vivos!"
+                                            </div>
+                                            <div class="testimonial-author">Maria José</div>
+                                        </div>
+                                    </div>
+                                </div> <!-- end of swiper-slide -->
+                                <!-- end of slide -->
+
+                            </div> <!-- end of swiper-wrapper -->
+
+                            <!-- Add Arrows -->
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                            <!-- end of add arrows -->
+
+                        </div> <!-- end of swiper-container -->
+                    </div> <!-- end of sliedr-container -->
+                    <!-- end of card slider -->
+
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of slider -->
+    <!-- end of testimonials -->
+
+
+<!-- Contact -->
+<div id="contact" class="form-2">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="text-container">
+                    <div class="section-title">CONTACTO</div>
+                    <h2>Entre em contacto connosco!</h2>
+                    <p>Pode passar pela nossa praia para comunicar connosco mas também pode utilizar o formulário disponibilizado para esclarecer qualquer dúvida ou questão!</p>
+                    <ul class="list-unstyled li-space-lg">
+                        <li class="address"><i class="fas fa-map-marker-alt"></i>Praia da Rocha</li>
+                        <li><i class="fas fa-phone"></i><a href="tel:003024630820">+351 939393939</a></li>
+                        <li><i class="fas fa-phone"></i><a href="tel:003024630820">+351 939393939</a></li>
+                        <li><i class="fas fa-envelope"></i><a href="mailto:activitiesforall.algarve@gmail.com">activitiesforall.algarve@gmail.com</a></li>
+                    </ul>
+                    <h3>Siga as nossas redes sociais</h3>
+
+                    <span class="fa-stack">
+                        <a href="#your-link">
+                            <span class="hexagon"></span>
+                            <i class="fab fa-facebook-f fa-stack-1x"></i>
+                        </a>
+                    </span>
+                    <span class="fa-stack">
+                        <a href="#your-link">
+                            <span class="hexagon"></span>
+                            <i class="fab fa-twitter fa-stack-1x"></i>
+                        </a>
+                    </span>
+                    <span class="fa-stack">
+                        <a href="#your-link">
+                            <span class="hexagon"></span>
+                            <i class="fab fa-pinterest fa-stack-1x"></i>
+                        </a>
+                    </span>
+                    <span class="fa-stack">
+                        <a href="#your-link">
+                            <span class="hexagon"></span>
+                            <i class="fab fa-instagram fa-stack-1x"></i>
+                        </a>
+                    </span>
+                    <span class="fa-stack">
+                        <a href="#your-link">
+                            <span class="hexagon"></span>
+                            <i class="fab fa-linkedin-in fa-stack-1x"></i>
+                        </a>
+                    </span>
+                    <span class="fa-stack">
+                        <a href="#your-link">
+                            <span class="hexagon"></span>
+                            <i class="fab fa-behance fa-stack-1x"></i>
+                        </a>
+                    </span>
+                </div> <!-- end of text-container -->
+            </div> <!-- end of col -->
+            <div class="col-lg-6">
+                
+                <!-- Contact Form -->
+                <form id="contactForm" data-toggle="validator" data-focus="false">
+                    <div class="form-group">
+                        <input type="text" class="form-control-input" id="cname" required>
+                        <label class="label-control" for="cname">Nome</label>
+                        <div class="help-block with-errors"></div>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control-input" id="cemail" required>
+                        <label class="label-control" for="cemail">Email</label>
+                        <div class="help-block with-errors"></div>
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control-textarea" id="cmessage" required></textarea>
+                        <label class="label-control" for="cmessage">Mensagem</label>
+                        <div class="help-block with-errors"></div>
+                    </div>
+                    <div class="form-group checkbox">
+                        <input type="checkbox" id="cterms" value="Agreed-to-Terms" required>Concordo com a <a href="privacy-policy.html">Política de Privacidade</a> e os <a href="terms-conditions.html">Termos e Condições</a> 
+                        <div class="help-block with-errors"></div>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="form-control-submit-button">SUBMETER MENSAGEM</button>
+                    </div>
+                    <div class="form-message">
+                        <div id="cmsgSubmit" class="h3 text-center hidden"></div>
+                    </div>
+                </form>
+                <!-- end of contact form -->
+
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+    </div> <!-- end of container -->
+</div> <!-- end of form-2 -->
+<!-- end of contact -->
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="text-container contactos">
+                        <h4>Contactos</h4>
+                        <ul class="list-unstyled li-space-lg white">
+                            <div>
+                                <li>
+                                    <i class="fa fa-phone"></i>
+                                    <a class="white" href="#your-link">+351 939393939</a> (chamada para rede móvel
+                                    nacional).
+                                </li>
+                            </div>
+                            <div>
+                                <li>
+                                    <i class="fa fa-envelope"></i>
+                                    <a class="white" href="terms-conditions.html">
+                                        activitiesforall.algarve@gmail.com</a>
+                                </li>
+                            </div>
+                            <div>
+                                <li>
+                                    <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                    <a class="white" href="privacy-policy.html">Av. Tomás Cabreira, Portimão, Algarve,
+                                        8500-802, PT</a>
+                                </li>
+                            </div>
+                        </ul>
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+                <div class="col-md-2">
+                    <div class="text-container">
+                        <h4>Links rápidos</h4>
+                        <ul class="list-unstyled li-space-lg white">
+                            <li>
+                                <a class="white" href="#your-link">Inicio</a>
+                            </li>
+                            <li>
+                                <a class="white" href="index.html">Todas as Atividades </a>
+                            </li>
+                            <li>
+                                <a class="white" href="Frotas.html">Frota</a>
+                            </li>
+                            <li>
+                                <a class="white" href="FAQ.html">FAQ</a>
+                            </li>
+                            <li>
+                                <a class="white" href="PDP.html">Políticas de Privacidade</a>
+                            </li>
+                        </ul>
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of footer -->
+    <!-- end of footer -->
+
+
+    <!-- Copyright -->
+    <div class="copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <p class="p-small">Activities for All - Grupo 104 @2023</p>
+                </div> <!-- end of col -->
+            </div> <!-- enf of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of copyright -->
+    <!-- end of copyright -->
+
+
+
+    <!-- Scripts -->
+    <script src="js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
+    <script src="js/popper.min.js"></script> <!-- Popper tooltip library for Bootstrap -->
+    <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
+    <!--<script src="js/jquery.easing.min.js"></script>  jQuery Easing for smooth scrolling between anchors -->
+    <script src="js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
+    <script src="js/jquery.magnific-popup.js"></script> <!-- Magnific Popup for lightboxes -->
+    <script src="js/morphext.min.js"></script> <!-- Morphtext rotating text in the header -->
+    <script src="js/isotope.pkgd.min.js"></script> <!-- Isotope for filter -->
+    <script src="js/validator.min.js"></script> <!-- Validator.js - Bootstrap plugin that validates forms -->
+    <script src="js/scripts.js"></script> <!-- Custom scripts -->
+    <script src="js/PlusMinusButton.js"></script>
+    <script src="js/MarcacaoHorarios.js"></script> <!-- Para ir buscar os horários disponíveis para marcação scripts -->
+
+    <!--******** CALENDÁRIOOOOOOOOOOOOOOOOOO****-->
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+
+        <script type="module" src="./bd/bd.js"></script> <!-- bd script -->
+        <script src="./js/navbar.js"></script> <!-- para fazer a navbar -->
+        <script type="module" src="./js/autenticacaoFrontEnd.js"></script> <!-- botão de login -->
+    
+        <script src="https://accounts.google.com/gsi/client" async defer></script>
+        <script src="https://unpkg.com/jwt-decode/build/jwt-decode.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jsSHA/2.0.2/sha.js"></script>
+    
+        <script type="module" src="js/apis/google.js"></script><!-- Script login google-->
+
+    <script>
+        $( document ).ready(function() {
+            $.getScript('js/jquery.easing.min.js');
+        });
+        (function ($, undefined) {
+            $('#datepicker').datepicker({
+                maxViewMode: 2,
+                language: "pt",
+                todayHighlight: true,
+            });
+        })(jQuery);
+    </script>
+
+</body>
+
+</html>

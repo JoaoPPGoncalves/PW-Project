@@ -1,0 +1,352 @@
+.buttonCheckIn{
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  border: 0px;
+  padding: 0px !important;
+  background: #d2d2d2 !important;
+  transition: all 0.7s ease;
+}
+
+.buttonCheckIn:hover{
+  background: #a7a5a5 !important;
+}
+
+/* Tirar o fundo, que está apor algures no core de css*/
+.semFundo{
+  background-color: rgba(0, 0, 0, 0.00) !important;
+}
+
+.aCheckIn{
+  color: black;
+}
+
+.aCheckIn:hover{
+  color: white;
+  text-decoration: none;
+}
+
+.previsaoTempoContent p{
+    margin: 0px;
+    
+}
+
+.previsaoTempoContent img{
+    width: 50px;
+}
+
+.horaAtual{
+    width: 245px;
+    height: 245px;
+    border: 1px solid black;
+    border-radius: 30px;
+    gap: 15px;
+}
+
+.horaSeguinte{
+    width: 180px;
+    height: 180px;
+    border: 1px solid black;
+    border-radius: 30px;
+    gap: 10px;
+}
+
+.dia{
+    padding-top: 17px;
+}
+
+.horaSeguinte .localizacao{
+    font-size: small;
+}
+
+.horaSeguinte img{
+    width: 40px;
+}
+
+/*** TABELA ****/
+
+.table-light {
+    --bs-table-bg: #fcfdfd;
+    --bs-table-striped-bg: #f6f8f9;
+    --bs-table-striped-color: #435971;
+    --bs-table-active-bg: #eaedef;
+    --bs-table-active-color: #435971;
+    --bs-table-hover-bg: #f1f3f5;
+    --bs-table-hover-color: #435971;
+    color: #435971;
+    border-color: #eaedef;
+  }
+
+
+  .table-light {
+    --bs-table-bg: #fcfdfd;
+    --bs-table-striped-bg: #f6f8f9;
+    --bs-table-striped-color: #435971;
+    --bs-table-active-bg: #eaedef;
+    --bs-table-active-color: #435971;
+    --bs-table-hover-bg: #f1f3f5;
+    --bs-table-hover-color: #435971;
+    color: #435971;
+    border-color: #eaedef;
+  }
+  .table-light th {
+    border-bottom-color: inherit !important;
+  }
+  .table-light .btn-icon {
+    color: #435971;
+  }
+
+  .table-border-bottom-0 tr:last-child td,
+.table-border-bottom-0 tr:last-child th {
+  border-bottom-width: 0;
+}
+
+.table {
+    --bs-table-bg: transparent;
+    --bs-table-accent-bg: transparent;
+    --bs-table-striped-color: #697a8d;
+    --bs-table-striped-bg: #f9fafb;
+    --bs-table-active-color: #697a8d;
+    --bs-table-active-bg: rgba(67, 89, 113, 0.1);
+    --bs-table-hover-color: #697a8d;
+    --bs-table-hover-bg: rgba(67, 89, 113, 0.06);
+    width: 100%;
+    margin-bottom: 1rem;
+    color: #697a8d;
+    vertical-align: middle;
+    border-color: #d9dee3;
+  }
+
+  .table-primary {
+    --bs-table-bg: #e1e2ff;
+    --bs-table-striped-bg: #dcdefb;
+    --bs-table-striped-color: #435971;
+    --bs-table-active-bg: #d1d4f1;
+    --bs-table-active-color: #435971;
+    --bs-table-hover-bg: #d8daf6;
+    --bs-table-hover-color: #435971;
+    color: #435971;
+    border-color: #d1d4f1;
+  }
+
+  .table-primary {
+    --bs-table-bg: #e1e2ff;
+    --bs-table-striped-bg: #dcdefb;
+    --bs-table-striped-color: #435971;
+    --bs-table-active-bg: #d1d4f1;
+    --bs-table-active-color: #435971;
+    --bs-table-hover-bg: #d8daf6;
+    --bs-table-hover-color: #435971;
+    color: #435971;
+    border-color: #d1d4f1;
+  }
+  .table-primary th {
+    border-bottom-color: inherit !important;
+  }
+  .table-primary .btn-icon {
+    color: #435971;
+  }
+
+  .table-secondary {
+    --bs-table-bg: #e7e9ed;
+    --bs-table-striped-bg: #e2e5e9;
+    --bs-table-striped-color: #435971;
+    --bs-table-active-bg: #d7dbe1;
+    --bs-table-active-color: #435971;
+    --bs-table-hover-bg: #dde0e6;
+    --bs-table-hover-color: #435971;
+    color: #435971;
+    border-color: #d7dbe1;
+  }
+
+  .table-secondary {
+    --bs-table-bg: #e7e9ed;
+    --bs-table-striped-bg: #e2e5e9;
+    --bs-table-striped-color: #435971;
+    --bs-table-active-bg: #d7dbe1;
+    --bs-table-active-color: #435971;
+    --bs-table-hover-bg: #dde0e6;
+    --bs-table-hover-color: #435971;
+    color: #435971;
+    border-color: #d7dbe1;
+  }
+  .table-secondary th {
+    border-bottom-color: inherit !important;
+  }
+  .table-secondary .btn-icon {
+    color: #435971;
+  }
+
+  .table-success {
+    --bs-table-bg: #e3f8d7;
+    --bs-table-striped-bg: #def3d4;
+    --bs-table-striped-color: #435971;
+    --bs-table-active-bg: #d3e8cd;
+    --bs-table-active-color: #435971;
+    --bs-table-hover-bg: #d9eed1;
+    --bs-table-hover-color: #435971;
+    color: #435971;
+    border-color: #d3e8cd;
+  }
+
+  .table-success {
+    --bs-table-bg: #e3f8d7;
+    --bs-table-striped-bg: #def3d4;
+    --bs-table-striped-color: #435971;
+    --bs-table-active-bg: #d3e8cd;
+    --bs-table-active-color: #435971;
+    --bs-table-hover-bg: #d9eed1;
+    --bs-table-hover-color: #435971;
+    color: #435971;
+    border-color: #d3e8cd;
+  }
+  .table-success th {
+    border-bottom-color: inherit !important;
+  }
+  .table-success .btn-icon {
+    color: #435971;
+  }
+
+  .table-danger {
+    --bs-table-bg: #ffd8d2;
+    --bs-table-striped-bg: #f9d4cf;
+    --bs-table-striped-color: #435971;
+    --bs-table-active-bg: #eccbc8;
+    --bs-table-active-color: #435971;
+    --bs-table-hover-bg: #f4d0cc;
+    --bs-table-hover-color: #435971;
+    color: #435971;
+    border-color: #eccbc8;
+  }
+
+  .table-danger {
+    --bs-table-bg: #ffd8d2;
+    --bs-table-striped-bg: #f9d4cf;
+    --bs-table-striped-color: #435971;
+    --bs-table-active-bg: #eccbc8;
+    --bs-table-active-color: #435971;
+    --bs-table-hover-bg: #f4d0cc;
+    --bs-table-hover-color: #435971;
+    color: #435971;
+    border-color: #eccbc8;
+  }
+  .table-danger th {
+    border-bottom-color: inherit !important;
+  }
+  .table-danger .btn-icon {
+    color: #435971;
+  }
+
+  .table-warning {
+    --bs-table-bg: #ffeecc;
+    --bs-table-striped-bg: #f9eac9;
+    --bs-table-striped-color: #435971;
+    --bs-table-active-bg: #ecdfc3;
+    --bs-table-active-color: #435971;
+    --bs-table-hover-bg: #f4e5c7;
+    --bs-table-hover-color: #435971;
+    color: #435971;
+    border-color: #ecdfc3;
+  }
+
+  .table-warning {
+    --bs-table-bg: #ffeecc;
+    --bs-table-striped-bg: #f9eac9;
+    --bs-table-striped-color: #435971;
+    --bs-table-active-bg: #ecdfc3;
+    --bs-table-active-color: #435971;
+    --bs-table-hover-bg: #f4e5c7;
+    --bs-table-hover-color: #435971;
+    color: #435971;
+    border-color: #ecdfc3;
+  }
+  .table-warning th {
+    border-bottom-color: inherit !important;
+  }
+  .table-warning .btn-icon {
+    color: #435971;
+  }
+
+  .table-info {
+    --bs-table-bg: #cdf3fb;
+    --bs-table-striped-bg: #c9eef7;
+    --bs-table-striped-color: #435971;
+    --bs-table-active-bg: #bfe4ed;
+    --bs-table-active-color: #435971;
+    --bs-table-hover-bg: #c5eaf3;
+    --bs-table-hover-color: #435971;
+    color: #435971;
+    border-color: #bfe4ed;
+  }
+
+  .table-info {
+    --bs-table-bg: #cdf3fb;
+    --bs-table-striped-bg: #c9eef7;
+    --bs-table-striped-color: #435971;
+    --bs-table-active-bg: #bfe4ed;
+    --bs-table-active-color: #435971;
+    --bs-table-hover-bg: #c5eaf3;
+    --bs-table-hover-color: #435971;
+    color: #435971;
+    border-color: #bfe4ed;
+  }
+  .table-info th {
+    border-bottom-color: inherit !important;
+  }
+  .table-info .btn-icon {
+    color: #435971;
+  }
+
+  .table-dark {
+    --bs-table-bg: #233446;
+    --bs-table-striped-bg: #2a3a4c;
+    --bs-table-striped-color: #fff;
+    --bs-table-active-bg: #394859;
+    --bs-table-active-color: #fff;
+    --bs-table-hover-bg: #304051;
+    --bs-table-hover-color: #fff;
+    color: #fff;
+    border-color: #394859;
+  }
+
+  .table-dark {
+    --bs-table-bg: #233446;
+    --bs-table-striped-bg: #2a3a4c;
+    --bs-table-striped-color: #fff;
+    --bs-table-active-bg: #394859;
+    --bs-table-active-color: #fff;
+    --bs-table-hover-bg: #304051;
+    --bs-table-hover-color: #fff;
+    color: #fff;
+    border-color: #394859;
+  }
+  .table-dark th {
+    border-bottom-color: #394859 !important;
+  }
+  .table-dark .btn-icon {
+    color: #fff;
+  }
+
+  
+.nav-align-top .table:not(.table-dark),
+.nav-align-top .table:not(.table-dark) thead:not(.table-dark) th,
+.nav-align-top .table:not(.table-dark) tfoot:not(.table-dark) th,
+.nav-align-top .table:not(.table-dark) td,
+.nav-align-right .table:not(.table-dark),
+.nav-align-right .table:not(.table-dark) thead:not(.table-dark) th,
+.nav-align-right .table:not(.table-dark) tfoot:not(.table-dark) th,
+.nav-align-right .table:not(.table-dark) td,
+.nav-align-bottom .table:not(.table-dark),
+.nav-align-bottom .table:not(.table-dark) thead:not(.table-dark) th,
+.nav-align-bottom .table:not(.table-dark) tfoot:not(.table-dark) th,
+.nav-align-bottom .table:not(.table-dark) td,
+.nav-align-left .table:not(.table-dark),
+.nav-align-left .table:not(.table-dark) thead:not(.table-dark) th,
+.nav-align-left .table:not(.table-dark) tfoot:not(.table-dark) th,
+.nav-align-left .table:not(.table-dark) td {
+  border-color: #d9dee3;
+}
+
+
+
+/** BOTÃO DE OPÇÕES **/

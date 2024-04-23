@@ -1,0 +1,91 @@
+#headerF {
+	background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url('../images/frotaHeader.jpg') center center no-repeat;
+	background-size:cover;	
+	margin-left: 0%;
+	margin-top: 0%;
+}
+/*
+#headerP .video-background {
+	width: 100%;
+	height: 600px;
+	object-fit: cover;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	z-index: -99;
+  }*/
+
+#headerF .header-content {
+	padding-top: 8rem;
+	padding-bottom: 2.125rem;
+	text-align: center;
+}
+
+#headerF .text-container {
+	margin-bottom: 3rem;
+}
+
+#headerF h1 {
+	margin-bottom: 0.5rem;
+	color: #fff;
+}
+
+#headerF .p-large {
+	margin-bottom: 2rem;
+	color: #dfe5ec;
+}
+
+#headerF .btn-solid-lg {
+	margin-right: 0.5rem;
+	margin-bottom: 1.25rem;
+}
+
+
+
+/*********************/
+/*    04. Header     */
+/*********************/
+/* { box-sizing: border-box; }
+.video-background {
+  background: none;
+  background-color: transparent;
+  position: none;
+  position: absolute;
+  width: 100%;
+  height: 109%;
+  top: 0; right: 0; bottom: 0; left: 0;
+  z-index: -99;
+}
+.video-foreground,
+.video-background iframe {
+  position:absolute;
+  margin-left: 0%;
+  background-color: transparent;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80%;
+  pointer-events: none;
+}*/
+
+#vidtop-content {
+	top: 0;
+	color: #fff;
+}
+
+
+@media (min-aspect-ratio: 16/9) {
+  .video-foreground { height: 300%; top: -100%; }
+}
+@media (max-aspect-ratio: 16/9) {
+  .video-foreground { width: 300%; left: -100%; }
+}
+@media all and (max-width: 600px) {
+.vid-info { width: 50%; padding: .5rem; }
+.vid-info h1 { margin-bottom: .2rem; }
+}
+@media all and (max-width: 500px) {
+.vid-info .acronym { display: none; }
+}
+

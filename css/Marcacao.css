@@ -1,0 +1,68 @@
+#col-md-6{ 
+    border-radius: 10px;
+    margin-right: 10%;
+    box-sizing: border-box;
+    transition: 0.5;
+    height: 400px;
+    width: 100% ;
+    display: flex;
+    justify-content: space-around;
+}
+
+#col-md-6 p{
+    text-align: left;
+    padding-top: 5%;
+    padding-left: 10%;
+}
+
+#col-md-6 span{
+    font-size: 14px;
+    padding-left: 2%;
+    padding-right: 0px;
+    color: black;
+}
+
+#col-md-6 i{
+    padding-left: 2%;
+}
+
+#col-md-6#QuantidadeBilhetesMarcacao{
+
+    background: white;
+    /* margin-left: 40%;
+    margin-bottom: 100%; */
+    /* box-sizing: border-box; */
+    padding-top: 2%;
+    border-radius: 4px;
+    transition: 0.5;
+    height: max-content;
+    width: 20%;
+}
+
+#QuantidadeBilhetesMarcacao{
+        background: white;
+        /* margin-left: 40%;
+        margin-bottom: 100%; */
+        /* box-sizing: border-box; */
+        padding-top: 2%;
+        border-radius: 4px;
+        transition: 0.5;
+        height: max-content;
+        width: 100%;
+        padding-bottom: 2%;
+}
+
+.LogoSemFundo img{
+    width: 300px;
+    margin-left: 20%;
+}
+    
+#QuantidadeBilhetesMarcacao p{
+    color: black;
+}
+    
+
+.form-1 .text-container{
+    text-align: left; 
+    margin-top: 0%;
+}
